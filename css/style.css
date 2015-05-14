@@ -29,6 +29,9 @@ header, section{
 	width: 280px;
 	margin-left:5px;
 }
+.item:hover{
+	background-color: #C0E3E8;
+}
 
 .shadow{
 	text-shadow: 2px 2px #CCC;
@@ -43,16 +46,23 @@ header, section{
 	margin: 5px 5px 5px 0px;
 }
 
-label{
+input[type="text"]{
 	font-weight: bold;
+	color: #375D81;
+	font: normal 24px/1.3 "Patrick Hand", Helvetica, sans-serif;	
+	background-color: inherit;
+	border: none;
+	width: 220px;
 }
-
+input[type="text"]:focus{
+    border: none;
+}
 .crossedOff{
 	text-decoration: line-through;
 	color: #AAAAAA;
 }
 
-.newItem{
+input[type="text"].newItem{
 	font-weight: normal;
 	color: #AAAAAA;
 }

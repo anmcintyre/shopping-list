@@ -6,6 +6,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<header class="note">
@@ -16,36 +18,17 @@
 			<span class="byline">by Andrea McIntyre</span>
 		</div>
 	</header>
-	<section class="note">
-	<i class="pin"></i>
-	<div>
-		<button class="blue" style="width: 148px">Remove Checked</button>	
-		<button class="blue" style="width: 140px">Remove All</button>
-	</div>
-	<div class="item">
-	   <i class="fa fa-check-square-o fa-1g"></i>
-	   <label for="item1" class="crossedOff">Strawberries</label>
-	   <i class="fa fa-trash-o fa-1g"></i>
-	</div>
-	<div class="item">
-	   <i class="fa fa-square-o fa-1g"></i>
-	   <label for="item2">Bananas</label>
-	   <i class="fa fa-trash-o fa-1g"></i>
-	</div>
-	<div class="item">
-	   <i class="fa fa-square-o fa-1g"></i>
-	   <label for="item2">Bread</label>
-	   <i class="fa fa-trash-o fa-1g"></i>
-	</div>
-	<div class="item">
-	   <i class="fa fa-square-o fa-1g"></i>
-	   <label for="item2">Flour</label>
-	   <i class="fa fa-trash-o fa-1g"></i>
-	</div>
-	<div class="item">
-	   <i class="fa fa-square-o fa-1g"></i>
-	   <label for="item2" class="newItem">Add Item</label>
-	</div>
+	<section class="note" id="items">
+		<i class="pin"></i>
+		<div>
+			<button class="blue" style="width: 148px" id="removeChecked">Remove Checked</button>	
+			<button class="blue" style="width: 140px" id="removeAll">Remove All</button>
+		</div>
+
+		<div class="item template">
+		   <i class="fa fa-square-o fa-1g"></i>
+		   <input class="newItem" type="text" value="Add Item" />
+		</div>
 
 	</section>
 
