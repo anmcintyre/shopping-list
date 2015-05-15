@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -15,22 +16,21 @@
 			<i class="pin"></i>
 			<i class="fa fa-shopping-cart fa-4x shadow"></i>
 			<span class="intro shadow">Shopping List</span>
-			<span class="byline">by Andrea McIntyre</span>
+			<span class="byline shadow">by Andrea McIntyre</span>
 		</div>
 	</header>
-	<section class="note" id="items">
+	<section class="note">
 		<i class="pin"></i>
 		<div>
 			<button class="blue" style="width: 148px" id="removeChecked">Remove Checked</button>	
 			<button class="blue" style="width: 140px" id="removeAll">Remove All</button>
 		</div>
-
-		<div class="item template">
-		   <i class="fa fa-square-o fa-1g"></i>
-		   <input class="newItem" type="text" value="Add Item" />
+		<div id="items">
+			<div class="item template">
+			   <i class="fa fa-square-o fa-1g"></i>
+			   <input class="newItem" type="text" value="Add Item" />
+			</div>
 		</div>
-
 	</section>
-
 </body>
 </html>

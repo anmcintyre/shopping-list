@@ -22,6 +22,11 @@ header, section{
 	left: 130px;
 }
 
+#items{
+	/* needed for JQueryUI sortable to work correctly */
+	position: relative; 
+}
+
 .item{
 	border: 2px solid #375D81;
 	border-radius: 15px;

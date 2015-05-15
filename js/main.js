@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+	
+	//allow items to be moved with mouse
+	$("#items").sortable({
+		axis : "y"
+	});
+	
 	//Remove parent on click of trash can
 	$("#items").on("click", ".fa-trash-o", function(){
 		$(this).parent().remove();
@@ -22,12 +28,13 @@ $( document ).ready(function() {
 	//Code the Remove Checked function
 	$("#removeChecked").click(function(){
 		$(".item").not(".template").has(".fa-check-square-o").remove();
-	})
+	});
 
 	//Code the Remove All function
 	$("#removeAll").click(function(){
 		$(".item").not(".template").not("newItemDiv").remove();
-	})	
+	});	
+
 
 	$(".newItem").focus(function(){
 		$("#items").append($(".template").clone(true));	
@@ -37,4 +44,5 @@ $( document ).ready(function() {
 		$(this).parent().append('<i class="fa fa-trash-o fa-1g"></i>');
 		$(this).unbind();
 	});
+
 });
